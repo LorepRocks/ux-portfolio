@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Button, Container } from '@mui/material'
-import styles from '../styles/Home.module.css'
+import { Button } from '@mui/material'
+import styles from 'styles/Home.module.css'
 import { ReactSVG } from 'react-svg'
-import Header from '../components/Header'
+import Header from 'components/Header'
 import EventIcon from '@mui/icons-material/Event';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 

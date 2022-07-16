@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react';
-import styles from '../styles/Header.module.css';
+import styles from 'styles/Header.module.css';
 import clsx from 'clsx';
 
 const Header = () => {
