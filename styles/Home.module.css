@@ -103,19 +103,19 @@
 }
 
 .projectButton{
-  margin-top: 24px;
-  color:#98BEAD;
-  border-color: #98BEAD;
-  background-color: #98BEAD;
-  font-weight: bold;
-  font-size: 18px;
-  border-radius: 50px;
-  color: #f9f9f6;
+  margin-top: 24px !important;
+  color:#98BEAD !important;
+  border-color: #98BEAD !important;
+  background-color: #98BEAD !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  border-radius: 50px !important;
+  color: #f9f9f6 !important;
 }
 .projectButton:hover{
-  background-color: #98BEAD;
-  color: #f9f9f6;
-  border-color: #98BEAD;
+  background-color: #98BEAD !important;
+  color: #f9f9f6 !important;
+  border-color: #98BEAD !important;
 }
 
 .illustration{
