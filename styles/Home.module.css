@@ -1,5 +1,22 @@
+@font-face {
+  font-family: 'Shadows';
+  src: url('/fonts/Shadows.ttf');
+  src: url('/fonts/Shadows.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Regular.ttf');
+  src: url('/fonts/Roboto-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 .container {
-  padding: 0 2rem;
+  background-color: #DDECF8;
 }
 
 .main {
@@ -7,9 +24,112 @@
   padding: 4rem 0;
   flex: 1;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+.avatar {
+  width:50%;
+  height: auto;
+}
+
+.socialContainer{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  
+}
+
+.social{
+  width: 30px;
+  height: 35px;
+  margin: 0 16px;
+}
+.social:hover{
+  color: #C4A2CC;
+}
+.social:hover svg{
+  fill: #C4A2CC;
+}
+
+.social:last-child{
+  margin-right: 0;
+}
+
+.projects {
+  width: 100%;
+  background-color: #F1ECF8;
+  padding: 3rem;
+}
+.gridProjects{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 35rem;
+}
+.projectItem{
+  margin-top: 4rem;
+  position: relative;
+  text-align: center;
+}
+
+.projectItem p {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Shadows Into Light Two', cursive;
+  color: #F98F71;
+
+
+}
+.projectTitle{
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: 2px;
+  color: #F98F71;
+}
+.projectDesc {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: .5px;
+  font-family: 'Roboto', sans-serif;
+  word-wrap: break-word;
+}
+.projectDesc span {
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+.button{
+  margin-top: 24px;
+  color:#98BEAD;
+  border-color: #98BEAD;
+  background-color: #98BEAD;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 50px;
+  color: #f9f9f6;
+}
+.button:hover{
+  background-color: #98BEAD;
+  color: #f9f9f6;
+  border-color: #98BEAD;
+}
+
+.illustration{
+  margin: 1rem 0 1rem;
+}
+
+.illustration svg{
+  width: 480px;
+}
+.contact{
+  width: 100%;
+  background-color: #F1ECF8;
+  height: 100vh;
 }
 
 .footer {
@@ -19,18 +139,24 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
+  color: #384955;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.footer span {
+  font-family: 'Shadows Into Light Two', cursive;
+  letter-spacing: 1px;
 }
 
 .title a {
   color: #0070f3;
   text-decoration: none;
+}
+
+.title span{
+  font-family: 'Shadows Into Light Two', cursive;
+  color: #C4A2CC;
+
 }
 
 .title a:hover,
@@ -43,19 +169,22 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 .title,
 .description {
   text-align: center;
+
 }
 
 .description {
-  margin: 4rem 0;
+  margin: 1rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
-
 .code {
   background: #fafafa;
   border-radius: 5px;
@@ -108,9 +237,52 @@
   margin-left: 0.5rem;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
+  .header{
+    justify-content: center;
+  }
+  .main{
+    flex-direction: column;
+  }
+  .title{
+    font-size: 3rem;
+  }
+  .social{
+    width: 25px;
+  }
+  .social svg{
+    width: 25px;
+  }
+  .description{
+    font-size: 1.3rem;
+  }
+  .avatar{
+    width: 100%;
+  }
+  .socialContainer{
+    justify-content: center;
+  }
+  .gridProjects{
+    padding: 0;
+  }
+  .illustration svg{
+    width: 360px;
+  }
+  .projectDesc{
+    font-size: 0.9rem;
+  }
 }
+
+

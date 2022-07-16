@@ -1,0 +1,28 @@
+.headerContainer {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 4rem;
+    background-color: #DDECF8;
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1000;
+}
+
+.headerLink {
+ margin: -1.5rem 3rem;
+ text-transform: capitalize;
+ letter-spacing: 2px;
+ font-weight: bold;
+ padding: 0.5rem;
+ font-family: 'Shadows Into Light Two', cursive;
+ font-size: 24px;
+}
+
+.headerLink:hover{
+    border-bottom: 2px solid #C4A2CC;
+}
+.active {
+    background-color: rgba(256,256,256,0.8)
+}
