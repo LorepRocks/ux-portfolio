@@ -26,3 +26,11 @@
 .active {
     background-color: rgba(256,256,256,0.8)
 }
+
+@media (max-width: 600px) {
+    .headerContainer{
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+    

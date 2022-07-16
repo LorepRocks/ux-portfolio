@@ -42,7 +42,6 @@
 
 .social{
   width: 30px;
-  height: 35px;
   margin: 0 16px;
 }
 .social:hover{
@@ -103,7 +102,7 @@
   font-family: 'Shadows Into Light Two', cursive;
 }
 
-.button{
+.projectButton{
   margin-top: 24px;
   color:#98BEAD;
   border-color: #98BEAD;
@@ -113,7 +112,7 @@
   border-radius: 50px;
   color: #f9f9f6;
 }
-.button:hover{
+.projectButton:hover{
   background-color: #98BEAD;
   color: #f9f9f6;
   border-color: #98BEAD;
@@ -141,6 +140,8 @@
   align-items: center;
   font-family: 'Roboto', sans-serif;
   color: #384955;
+  background-color: #FFFBD6;
+
 }
 
 .footer span {
@@ -261,6 +262,7 @@
   }
   .social{
     width: 25px;
+    margin: 0 8px;
   }
   .social svg{
     width: 25px;
@@ -273,6 +275,7 @@
   }
   .socialContainer{
     justify-content: center;
+    align-items: center;
   }
   .gridProjects{
     padding: 0;

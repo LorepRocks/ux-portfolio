@@ -25,12 +25,12 @@ export default function Home() {
             <div className={styles.socialContainer}>
               <div className={styles.social}>
                 <a href='#'>
-                  <EmailOutlinedIcon fontSize="large" />
+                  <ReactSVG src='/email.svg'/>
                 </a>
               </div>
               <div className={styles.social}>
                 <a href='#'>
-                  <EventIcon fontSize="large" />
+                <ReactSVG src='/calendar.svg'/>
                 </a>
               </div>
               <div className={styles.social}>
@@ -59,7 +59,7 @@ export default function Home() {
               <Button 
                 variant='outlined' 
                 size='large' 
-                className={styles.button}>
+                className={styles.projectButton}>
                   See Project
               </Button>
             </div>
@@ -72,7 +72,7 @@ export default function Home() {
               <Button 
                 variant='outlined' 
                 size='large' 
-                className={styles.button}>
+                className={styles.projectButton}>
                   See Project
               </Button>
             </div>
@@ -85,7 +85,7 @@ export default function Home() {
               <Button 
                 variant='outlined' 
                 size='large' 
-                className={styles.button}>
+                className={styles.projectButton}>
                   See Project
               </Button>
             </div>
