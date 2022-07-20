@@ -3,6 +3,7 @@ import { projectsList } from 'lib/projects';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import styles from 'styles/Project.module.css'
 import Image from 'next/image';
+import Head from 'next/head';
 export default function Project({project = null}) {
 
     if(!project) {
@@ -11,6 +12,10 @@ export default function Project({project = null}) {
     
     return (
         <Container maxWidth="xl">
+            <Head>
+                <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet"/>
+                <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet"/>
+            </Head>
              <IconButton
                   aria-label="back"
                   className={styles.backButton}

@@ -63,17 +63,17 @@
     color: #4E5B52;
 }
 .sectionTitle {
-    font-family: 'Shadows Into Light Two', cursive;
+    font-family: 'Shadows Into Light Two', cursive !important;
     text-align: center;
     width: 100%;
-    font-size: 40px;
+    font-size: 40px !important;
     color: #93a399;
-    margin-top: 2rem;
+    margin-top: 2rem !important;
 }
 .divider{
     height: 2;
     background-color: #CFCAF7;
-    margin: .5rem 35rem;
+    margin: .5rem 35rem !important;
 }
 
 .personaContainer{
@@ -155,7 +155,7 @@
     }
 
     .divider {
-        margin: .5rem 2rem;
+        margin: .5rem 2rem !important;
     }
     .personaContainer{
         justify-content: space-around;
