@@ -57,6 +57,7 @@ export default function Home() {
               <span>iChoose</span> is an app that allows you to make a restaurant reservation. Also, facilitates the manage of your reservation, cancel or even select the menu before you arrived to the restaurant.
               </div>
               <Button 
+                href={'/projects/1'}
                 variant='outlined' 
                 size='large' 
                 className={styles.projectButton}>
@@ -70,6 +71,7 @@ export default function Home() {
               When you highlight a phrase in one of the books you're reading is easy to forget in the future where was that exactly phrase. But with <span>BookNotes</span> app users don't have to worry about that, they can save all the notes and organize by book and always get the information right there!
               </div>
               <Button 
+                href={'/projects/2'}
                 variant='outlined' 
                 size='large' 
                 className={styles.projectButton}>
@@ -83,6 +85,7 @@ export default function Home() {
                 Do you want to make new friends or just help the world to be a better place? <span>LocalHub</span> is an app that helps people to find the right place to start service in local community.
               </div>
               <Button 
+                href={'/projects/3'}
                 variant='outlined' 
                 size='large' 
                 className={styles.projectButton}>

@@ -1,0 +1,190 @@
+.backButton{
+    margin-top: 2rem;
+}
+.title {
+    font-family: 'Shadows Into Light Two', cursive;
+    text-align: center;
+    width: 100%;
+    font-size: 80px;
+    color: #93a399;
+}
+.projectInfo{
+    padding: 2rem;
+    background-color: #FDF2F9;
+    margin-top: 1.5rem;
+    border-radius: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.projectInfo p {
+  font-family: 'Roboto', sans-serif;
+  word-wrap: break-word;
+  font-size: 20px;
+}
+
+.projectInfo p span {
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 24px;
+    color: #008AAB;
+}
+
+.projectInfoContainer{
+    max-width: 50%;
+    text-align: center;
+}
+
+.projectDefinition {
+    padding: 2rem;
+    background-color: #E0F0E5;
+    margin-top: 1.5rem;
+    border-radius: 80px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+.projectDefinition p {
+    font-family: 'Roboto', sans-serif;
+    word-wrap: break-word;
+    font-size: 20px;
+}
+
+.projectDefinition p span {
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    font-size: 24px;
+    color: #4E5B52;
+}
+.sectionTitle {
+    font-family: 'Shadows Into Light Two', cursive;
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    color: #93a399;
+    margin-top: 2rem;
+}
+.divider{
+    height: 2;
+    background-color: #CFCAF7;
+    margin: .5rem 35rem;
+}
+
+.personaContainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+
+.personaImg {
+    position: relative;
+    width: 630px;
+    height: 360px;
+}
+.researchContainer{
+    text-align: center;
+    padding: 2rem;
+    background-color: #FFFAD1;
+    margin-top: 1.5rem;
+    border-radius: 80px;
+}
+
+.researchContainer p {
+    font-family: 'Roboto', sans-serif;
+    word-wrap: break-word;
+    font-size: 20px;
+}
+.researchContainer p span{
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    font-size: 24px;
+    color: #E59C41;
+    display: block;
+}
+
+.studyResults {
+    text-align: left;
+    padding: 2rem 6rem;    
+    margin-top: 1.5rem;
+    border: 1px solid #F1DED0;
+    border-radius: 80px;
+}
+
+.studyResults p {
+    font-family: 'Roboto', sans-serif;
+    word-wrap: break-word;
+    font-size: 20px;
+}
+
+.studyResults p span{
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    font-size: 24px;
+    color: #B4C9F9;
+}
+
+@media (max-width: 600px) {
+    .title{
+        font-size: 60px;
+    }
+    .projectInfo p {
+        font-size: 16px;
+    }
+
+    .projectInfoContainer{
+        max-width: 100%;
+    }
+    .projectInfo p span{
+        font-size: 18px;
+    }
+    .projectDefinition p {
+        font-size: 16px;
+    }
+    .projectDefinition p span{
+        font-size: 18px;
+    }
+
+    .divider {
+        margin: .5rem 2rem;
+    }
+    .personaContainer{
+        justify-content: space-around;
+        padding: 1.5rem 0;
+        flex-direction: column;
+    }
+    .personaImg {
+        width: 360px;
+        height: 240px;
+    }
+    .researchContainer p{
+        font-size: 16px;
+    }
+
+    .researchContainer p span{
+        font-size: 18px;
+    }
+    .studyResults{
+        text-align: left;
+        padding: 2rem 1.5rem;    
+        margin-top: 1.5rem;
+    }
+
+    .studyResults p {
+        font-size: 16px;
+    }
+
+    .studyResults p span {
+        font-size: 18px;
+    }
+
+}
