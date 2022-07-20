@@ -3,10 +3,15 @@ import { projectsList } from 'lib/projects';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useRouter } from 'next/router'
 import styles from 'styles/Project.module.css'
-import Header from 'components/Header'
 import Image from 'next/image';
 const Project  = ({project}) => {
+
     const router = useRouter()
+    
+    if(!project) {
+        return null
+    }
+    
     return (
         <Container maxWidth="xl">
              <IconButton
@@ -67,7 +72,7 @@ const Project  = ({project}) => {
                     </div>
                 </Box>
                 {
-                    project.user_journey_map && (
+                    project?.user_journey_map && (
                         <Box>
                             <Typography variant='h3' className={styles.sectionTitle}>
                             User Journey Map
@@ -82,7 +87,7 @@ const Project  = ({project}) => {
                     )
                 }
                 {
-                    project.research_study && (
+                    project?.research_study && (
                         <Box>
                             <Typography variant='h3' className={styles.sectionTitle}>
                               Research Study
@@ -101,7 +106,7 @@ const Project  = ({project}) => {
                     )
                 }
                 {
-                    project.user_testing_results && (
+                    project?.user_testing_results && (
                     <Box>
                         <Typography variant='h3' className={styles.sectionTitle}>
                           Usability Study Results
