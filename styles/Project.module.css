@@ -2,10 +2,10 @@
     margin-top: 2rem;
 }
 .title {
-    font-family: 'Shadows Into Light Two', cursive;
+    font-family: 'Shadows Into Light Two', cursive !important;
     text-align: center;
     width: 100%;
-    font-size: 80px;
+    font-size: 80px !important;
     color: #93a399;
 }
 .projectInfo{
@@ -135,7 +135,7 @@
 
 @media (max-width: 600px) {
     .title{
-        font-size: 60px;
+        font-size: 60px !important;
     }
     .projectInfo p {
         font-size: 16px;
