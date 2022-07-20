@@ -1,13 +1,10 @@
 import { Container, Typography, Box, IconButton, Divider } from '@mui/material';
 import { projectsList } from 'lib/projects';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { useRouter } from 'next/router'
 import styles from 'styles/Project.module.css'
 import Image from 'next/image';
-const Project  = ({project}) => {
+const Project  = ({project = null}) => {
 
-    const router = useRouter()
-    
     if(!project) {
         return null
     }
@@ -137,7 +134,7 @@ const Project  = ({project}) => {
 
 
 export async function getStaticPaths() {
-    const projects = projectsList
+    const projects = await projectsList
     const paths = projects.map(project => {
         return {
             params: { id: project.id.toString() }
@@ -149,8 +146,8 @@ export async function getStaticPaths() {
     }
 }
 
-export function getStaticProps({ params }) {
-    const projectFilter = projectsList.filter(p => {
+export async function getStaticProps({ params }) {
+    const projectFilter = await projectsList.filter(p => {
         return p.id.toString() === params.id;
     })
     const project =  projectFilter[0]
