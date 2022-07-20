@@ -3,7 +3,7 @@ import { projectsList } from 'lib/projects';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import styles from 'styles/Project.module.css'
 import Image from 'next/image';
-const Project  = ({project = null}) => {
+export default function Project({project = null}) {
 
     if(!project) {
         return null
@@ -157,5 +157,3 @@ export async function getStaticProps({ params }) {
         }
     }
 }
-
-export default Project
