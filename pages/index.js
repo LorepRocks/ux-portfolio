@@ -24,22 +24,22 @@ export default function Home() {
             </p>
             <div className={styles.socialContainer}>
               <div className={styles.social}>
-                <a href='#'>
+                <a href='mailto:lorenaux@yopmail.com'>
                   <ReactSVG src='/email.svg'/>
                 </a>
               </div>
               <div className={styles.social}>
-                <a href='#'>
+                <a href='https://calendly.com/es'>
                 <ReactSVG src='/calendar.svg'/>
                 </a>
               </div>
               <div className={styles.social}>
-                <a href='#'>
+                <a href='https://linkedin.com'>
                   <ReactSVG src='/linkedin.svg'/>
                 </a>
               </div>
               <div className={styles.social}>
-                <a href='#'>
+                <a href='https://www.behance.net/loreprocks'>
                   <ReactSVG src='/behance.svg'/>
                 </a>
               </div>

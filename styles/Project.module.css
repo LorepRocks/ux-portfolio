@@ -110,12 +110,26 @@
     display: block;
 }
 
+.resultsContainer{
+    border: 1px solid #F1DED0;
+    border-radius: 80px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
 .studyResults {
     text-align: left;
     padding: 2rem 6rem;    
     margin-top: 1.5rem;
-    border: 1px solid #F1DED0;
-    border-radius: 80px;
+}
+
+.storyBoardContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    margin-top: 1.5rem;
 }
 
 .studyResults p {
@@ -131,6 +145,103 @@
     margin-bottom: 1rem;
     font-size: 24px;
     color: #B4C9F9;
+}
+.researchImg{
+    position: relative;
+    width: 476px;
+    height: 499px;
+}
+.paperContainer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.wireframe {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 3rem;
+    align-items: center;
+    justify-items: center;
+    margin-top: 1.5rem;
+    background-color: #DDEBF8;
+    padding: 2rem;
+    border-radius: 80px;
+}
+.wireframe div p {
+    font-family: 'Roboto', sans-serif !important;
+    word-wrap: break-word;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2F4858;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.wireframeImg { 
+    position: relative;
+    width: 340px;
+    height: 520px;
+}
+.mockup{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 3rem;
+    align-items: center;
+    justify-items: center;
+    margin-top: 1.5rem;
+    background-color: #F5E6DB;
+    padding: 2rem;
+    border-radius: 80px;
+}
+
+.mockup div p {
+    font-family: 'Roboto', sans-serif !important;
+    word-wrap: break-word;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #5E6276;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.mockupImg { 
+    position: relative;
+    width: 300px !important;
+    height: 520px;
+}
+
+.mockupImgWeb {
+    position: relative;
+    width: 420px;
+    height: 520px;
+}
+.sitemapContainer {
+    padding: 1rem;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+.conclusion {
+    padding: 2rem;
+    margin-top: 1.5rem;
+    background-color: #E0F0E5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    border-radius: 80px;
+}
+.conclusionContainer {
+    max-width: 50%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif !important;
+    word-wrap: break-word;
+    font-size: 22px;
 }
 
 @media (max-width: 600px) {
@@ -163,7 +274,7 @@
         flex-direction: column;
     }
     .personaImg {
-        width: 360px;
+        width: 340px;
         height: 240px;
     }
     .researchContainer p{
@@ -184,6 +295,62 @@
     }
 
     .studyResults p span {
+        font-size: 18px;
+    }
+    .resultsContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 2.5rem;
+    }
+    .researchImg{
+        width: 360px;
+        height: 380px;
+    }
+    .storyBoardContainer{
+        flex-direction: column;
+        padding: 1rem 0;
+        
+    }
+    .storyBoardContainer div {
+        margin-bottom: 2rem;
+    }
+    .storyBoardContainer div:last-child {
+        margin-bottom: .5rem;
+    }
+    .wireframe {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3.5rem 1rem 1rem;
+    }
+
+    .wireframe div p {
+        font-size: 16px;
+    }
+
+    .wireframeImg {
+        width: 310px;
+        height: 500px;
+    }
+    .mockup {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3.5rem 1rem 1rem;
+    }
+    .mockup div p {
+        font-size: 16px;
+    }
+    .mockupImg { 
+        width: 270px !important;
+        height: 520px;
+    }
+    
+    .mockupImgWeb {
+        width: 310px;
+        height: 520px;
+    }
+    .conclusionContainer {
+        max-width: 100%;
         font-size: 18px;
     }
 
